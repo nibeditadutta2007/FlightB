@@ -1,7 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-
 import { globalErrorHandler } from "./middlewares/globalErrorhandler.js";
 import { PORT } from "./config/envConfig.js";
 import router from "./routes/v1/index.js";
