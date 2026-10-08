@@ -2,7 +2,7 @@ import { StatusCodes } from "http-status-codes";
 import { eq, desc } from "drizzle-orm";
 import { db } from "../config/dbConfig.js";
 import { bookingsTable } from "../db/schema.js";
-import AppError from "../utils/errors/app-error.js";
+import { AppError } from "../utils/errors/AppError.js";
 
 class BookingRepository {
     async create(data) {
